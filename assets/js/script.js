@@ -22,10 +22,10 @@ function generatePassword() {
     var specInclude = prompt("Include Special characters? Y/N").toUpperCase();
 
     if(passLength != "") {lengthCheck = true}
-    if(upperInclude != "") {charTypeCheck = true}
-    if(lowerInclude != "") {charTypeCheck = true}
-    if(numInclude != "") {charTypeCheck = true}
-    if(specInclude != "") {charTypeCheck = true}
+    if(upperInclude != ("" || "N")) {charTypeCheck = true}
+    if(lowerInclude != ("" || "N")) {charTypeCheck = true}
+    if(numInclude != ("" || "N")) {charTypeCheck = true}
+    if(specInclude != ("" || "N")) {charTypeCheck = true}
   }
   
   var passHolder = "";
